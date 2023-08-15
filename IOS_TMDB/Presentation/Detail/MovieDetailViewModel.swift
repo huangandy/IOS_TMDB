@@ -29,7 +29,7 @@ class MovieDetailViewModel: ObservableObject {
             refreshFavorite(movie: movie)
             phase = .success(movie)
         } catch {
-            phase = .failure(error)
+            phase = .failure(nil, error)
         }
     }
     

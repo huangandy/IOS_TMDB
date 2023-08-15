@@ -83,7 +83,7 @@ class MovieSearchViewModel: ObservableObject {
                 return
             }
             guard trimmedQuery == self.trimmedQuery else { return }
-            phase = .failure(error)
+            phase = .failure(self.results, error)
         }
     }
     

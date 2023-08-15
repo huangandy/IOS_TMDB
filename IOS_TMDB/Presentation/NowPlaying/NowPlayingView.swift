@@ -51,6 +51,7 @@ struct NowPlayingView: View {
                 .padding(.vertical, 10)
             }
         }
+        .overlay(overlayView)
         .navigationTitle("Now Playing")
         .toolbar {
             Button(action: {
@@ -64,7 +65,7 @@ struct NowPlayingView: View {
                 MovieSearchView()
             }
         }.onAppear {
-            viewModel.refreshMovies()
+            viewModel.resortingMovies()
         }
     }
         
@@ -72,8 +73,22 @@ struct NowPlayingView: View {
     func footer() -> some View {
         if viewModel.isEnd {
             Text("End")
-        } else {
+        }
+    }
+    
+    @ViewBuilder
+    private var overlayView: some View {
+        switch viewModel.phase {
+            
+        case .empty:
             ProgressView()
+        case .success(let values) where values.isEmpty:
+            EmptyPlaceholderView(text: "No results", image: Image(systemName: "film"))
+        case .failure(let values, let error) where values.isEmpty:
+            RetryView(text: error.localizedDescription, retryAction: {
+                viewModel.refreshMovies()
+            })
+        default: EmptyView()
         }
     }
     

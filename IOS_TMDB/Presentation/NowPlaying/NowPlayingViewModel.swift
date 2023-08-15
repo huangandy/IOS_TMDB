@@ -15,6 +15,7 @@ class NowPlayingViewModel: ObservableObject {
     var isFetching = false
     @Published var isEnd = false
     @Published var results = [Movie]()
+    @Published private(set) var phase: DataFetchPhase<[Movie]> = .empty
     
     @AppStorage(UserDefaultKeys.layout.rawValue) private var layout = 0
     @AppStorage(UserDefaultKeys.sorting.rawValue) private var sorting = 0
@@ -42,15 +43,20 @@ class NowPlayingViewModel: ObservableObject {
             isFetching.toggle()
             do {
                 let list = try await movieService.fetchMovies(from: MovieListEndpoint.nowPlaying, page: self.page)
+                isFetching.toggle()
                 DispatchQueue.main.async {
                     self.isEnd = list.page >= list.totalPages
                     self.results.append(contentsOf: list.results)
                     self.page += 1
                     self.sortMovies(sortKey: self.sortKey)
+                    self.phase = .success(self.results)
                 }
-                isFetching.toggle()
+                
             } catch {
                 isFetching.toggle()
+                DispatchQueue.main.async {
+                    self.phase = .failure(self.results, error)
+                }
             }
         }
     }
@@ -72,21 +78,26 @@ class NowPlayingViewModel: ObservableObject {
         })
     }
     
-    func refreshMovies() {
+    func resortingMovies() {
         guard previousSortKey != self.sortKey else { return }
         if self.sortKey == .Default {
-            self.results = []
-            self.page = 1
-            self.isFetching = false
-            Task {
-                await self.fetchResults()
-            }
+            self.refreshMovies()
         } else {
             DispatchQueue.main.async {
                 self.sortMovies(sortKey: self.sortKey)
             }
         }
         previousSortKey = self.sortKey
+    }
+    
+    func refreshMovies() {
+        self.phase = .empty
+        self.results = []
+        self.page = 1
+        self.isFetching = false
+        Task {
+            await self.fetchResults()
+        }
     }
     
     func next(result: Movie) async {

@@ -22,7 +22,7 @@ struct DataFetchPhaseOverlayView<V: EmptyData>: View {
             ProgressView()
         case .success(let value) where value.isEmpty:
             EmptyPlaceholderView(text: "No Data", image: Image(systemName: "tv"))
-        case .failure(let error):
+        case .failure(_, let error):
             RetryView(text: error.localizedDescription, retryAction: retryAction)
         default:
             EmptyView()
@@ -50,7 +50,7 @@ struct DataFetchPhaseOverlayView_Previews: PreviewProvider {
                 print("Retry")
             }
             
-            DataFetchPhaseOverlayView<Movie?>(phase: .failure(MovieError.invalidResponse)) {
+            DataFetchPhaseOverlayView<Movie?>(phase: .failure(nil, MovieError.invalidResponse)) {
                 print("Retry")
             }
             

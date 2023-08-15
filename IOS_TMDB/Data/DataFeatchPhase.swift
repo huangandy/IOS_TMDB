@@ -10,10 +10,13 @@ import Foundation
 enum DataFetchPhase<V> {
     case empty
     case success(V)
-    case failure(Error)
+    case failure(V, Error)
     
     var value: V? {
-        if case .success(let v) = self {
+        if case .success(let v) = self{
+            return v
+        }
+        if case .failure(let v, _) = self{
             return v
         }
         return nil

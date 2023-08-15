@@ -63,7 +63,7 @@ struct MovieSearchView: View {
         case .success(let values) where values.isEmpty:
             EmptyPlaceholderView(text: "No results", image: Image(systemName: "film"))
             
-        case .failure(let error):
+        case .failure(_, let error):
             RetryView(text: error.localizedDescription, retryAction: {
                 Task {
                     await viewModel.search(query: viewModel.query)
