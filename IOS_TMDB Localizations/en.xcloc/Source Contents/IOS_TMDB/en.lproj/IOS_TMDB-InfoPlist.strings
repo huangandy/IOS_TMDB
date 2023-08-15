@@ -1,0 +1,4 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "TMDB";
+/* Bundle name */
+"CFBundleName" = "IOS_TMDB";

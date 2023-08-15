@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="IOS_TMDB/en.lproj/IOS_TMDB-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hant">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.2" build-num="14C18"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>TMDB</source>
+        <target>TMDB</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>IOS_TMDB</source>
+        <target>IOS_TMDB</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="IOS_TMDB/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="zh-Hant">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.2" build-num="14C18"/>
+    </header>
+    <body>
+      <trans-unit id="Director(s)" xml:space="preserve">
+        <source>Director(s)</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="End" xml:space="preserve">
+        <source>End</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Favorite" xml:space="preserve">
+        <source>Favorite</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Favorites" xml:space="preserve">
+        <source>Favorites</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Layout" xml:space="preserve">
+        <source>Layout</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Now Playing" xml:space="preserve">
+        <source>Now Playing</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Producer(s)" xml:space="preserve">
+        <source>Producer(s)</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Screenwriter(s)" xml:space="preserve">
+        <source>Screenwriter(s)</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Search" xml:space="preserve">
+        <source>Search</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sorting" xml:space="preserve">
+        <source>Sorting</source>
+        <target/>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Starring" xml:space="preserve">
+        <source>Starring</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Try Again" xml:space="preserve">
+        <source>Try Again</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="UI Control" xml:space="preserve">
+        <source>UI Control</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="search_movie" xml:space="preserve">
+        <source>search_movie</source>
+        <target>輸入電影名稱</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -39,6 +39,8 @@
 		FC6B15982A8A0E8100853D11 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B15972A8A0E8100853D11 /* FavoriteViewModel.swift */; };
 		FC6B159A2A8A167D00853D11 /* FavorateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B15992A8A167D00853D11 /* FavorateRepository.swift */; };
 		FC6B159E2A8A226E00853D11 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B159D2A8A226E00853D11 /* UserDefaultKeys.swift */; };
+		FCA571AA2A8BC21D00CCD74F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA571A82A8BC21D00CCD74F /* Localizable.strings */; };
+		FCA571AD2A8BC29600CCD74F /* IOS_TMDB-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA571AB2A8BC29600CCD74F /* IOS_TMDB-InfoPlist.strings */; };
 		FCA731182A88876C00970FFF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA731172A88876C00970FFF /* SettingsView.swift */; };
 		FCA7311A2A88878100970FFF /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA731192A88878100970FFF /* FavoriteView.swift */; };
 		FCA7311D2A88A6DE00970FFF /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7311C2A88A6DE00970FFF /* NowPlayingView.swift */; };
@@ -106,6 +108,9 @@
 		FC6B15972A8A0E8100853D11 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		FC6B15992A8A167D00853D11 /* FavorateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorateRepository.swift; sourceTree = "<group>"; };
 		FC6B159D2A8A226E00853D11 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		FCA571A92A8BC21D00CCD74F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCA571AC2A8BC29600CCD74F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/IOS_TMDB-InfoPlist.strings"; sourceTree = "<group>"; };
+		FCA571AE2A8BC29600CCD74F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FCA731172A88876C00970FFF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FCA731192A88878100970FFF /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		FCA7311C2A88A6DE00970FFF /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
@@ -169,6 +174,7 @@
 		FC11F4ED2A85CCD7005D8D91 = {
 			isa = PBXGroup;
 			children = (
+				FCA571AB2A8BC29600CCD74F /* IOS_TMDB-InfoPlist.strings */,
 				FC11F4F82A85CCD7005D8D91 /* IOS_TMDB */,
 				FC11F50E2A85CCDA005D8D91 /* IOS_TMDBTests */,
 				FC11F5182A85CCDA005D8D91 /* IOS_TMDBUITests */,
@@ -191,6 +197,7 @@
 		FC11F4F82A85CCD7005D8D91 /* IOS_TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				FCA571A82A8BC21D00CCD74F /* Localizable.strings */,
 				FC6B159C2A8A225D00853D11 /* Config */,
 				FC4228CA2A872C8A005EA66C /* Presentation */,
 				FC4228C72A872B05005EA66C /* Resources */,
@@ -463,6 +470,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = FC11F4ED2A85CCD7005D8D91;
 			productRefGroup = FC11F4F72A85CCD7005D8D91 /* Products */;
@@ -482,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4228D02A8737A2005EA66C /* now_playing.json in Resources */,
+				FCA571AA2A8BC21D00CCD74F /* Localizable.strings in Resources */,
+				FCA571AD2A8BC29600CCD74F /* IOS_TMDB-InfoPlist.strings in Resources */,
 				FC11F5012A85CCD9005D8D91 /* Preview Assets.xcassets in Resources */,
 				FC11F4FE2A85CCD9005D8D91 /* Assets.xcassets in Resources */,
 			);
@@ -675,6 +685,27 @@
 			targetProxy = FC11F5162A85CCDA005D8D91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCA571A82A8BC21D00CCD74F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA571A92A8BC21D00CCD74F /* en */,
+				FCA571AE2A8BC29600CCD74F /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FCA571AB2A8BC29600CCD74F /* IOS_TMDB-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA571AC2A8BC29600CCD74F /* zh-Hant */,
+			);
+			name = "IOS_TMDB-InfoPlist.strings";
+			path = IOS_TMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FC11F51D2A85CCDA005D8D91 /* Debug */ = {

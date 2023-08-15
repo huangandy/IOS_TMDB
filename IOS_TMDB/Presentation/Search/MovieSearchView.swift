@@ -36,7 +36,7 @@ struct MovieSearchView: View {
             .padding(.horizontal, 5)
             .padding(.vertical, 10)
         }
-        .searchable(text: $viewModel.query, prompt: "Search movies")
+        .searchable(text: $viewModel.query, prompt: String(localized: "search_movie"))
         .overlay(overlayView)
         .listStyle(.plain)
         .listRowSeparator(.hidden)
