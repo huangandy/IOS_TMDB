@@ -1,0 +1,19 @@
+# OS X
+.DS_Store
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, 
+Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+IOS_TMDB.xcworkspace
+
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock

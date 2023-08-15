@@ -1,0 +1,403 @@
+{
+  "dates": {
+    "maximum": "2023-08-17",
+    "minimum": "2023-06-30"
+  },
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/tTfnd2VrlaZJSBD9HUbtSF3CqPJ.jpg",
+      "genre_ids": [
+        35,
+        12,
+        14
+      ],
+      "id": 346698,
+      "original_language": "en",
+      "original_title": "Barbie",
+      "overview": "芭比（瑪格羅比  飾演）在一個完美的地方過著完美的人生，會舉辦超級盛大的派對，有華麗音樂及排舞，每天都過著很棒的日子。但有一天怪事開始發生在芭比身上，她的洗澡水不熱，會從屋頂跌落，甚至發現她的腳跟竟然貼地了，變成扁平足。之後她決定與肯尼（萊恩葛斯林  飾演）進入真實世界，去探索事情的真相，並且引發一連串的意外事件。",
+      "popularity": 2258.781,
+      "poster_path": "/j9RaptNfOnqHMlTVa7nRdcTrSwr.jpg",
+      "release_date": "2023-07-20",
+      "title": "Barbie芭比",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 2789
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
+      "genre_ids": [
+        28,
+        878,
+        27
+      ],
+      "id": 615656,
+      "original_language": "en",
+      "original_title": "Meg 2: The Trench",
+      "overview": "今年夏天，準備好感受腎上腺素激升的終極快感！《巨齒鯊2：海溝深淵》比2018年上映的賣座電影《巨齒鯊》更加刺激精彩，不僅動作戲更上一層樓，甚至深入更深的海域，有更多龐大的巨齒鯊、更多意想不到的驚險！傑森史塔森潛入未知水域，帶著大膽的研究團隊，潛到海底最深處進行探勘。然而，這趟探勘很快就陷入混亂；一場惡意的採礦作業威脅到他們的任務，迫使他們捲入一場高風險的生存之戰。為了要對抗龐大的巨齒鯊及無情的環境掠奪者，英雄們必須靠智取、智勝，甚至要游得比恐怖掠食者更快，才能贏得這場與時間的賽跑。觀眾將可以完全沉浸在今年最刺激的《巨齒鯊2：海溝深淵》中—在這裡只有無法言語的快感才能與海洋的深度相比！",
+      "popularity": 1863.504,
+      "poster_path": "/xJUZhfB5tRuSn6Ml0kUf5yB1HZh.jpg",
+      "release_date": "2023-08-02",
+      "title": "巨齒鯊2：海溝深淵",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 351
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hPcP1kv6vrkRmQO3YgV1H97FE5Q.jpg",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "id": 614479,
+      "original_language": "en",
+      "original_title": "Insidious: The Red Door",
+      "overview": "《陰兒房》原班人馬回歸，蘭伯特家族駭人故事的最終章。為了一勞永逸解決家人的惡夢，喬許和已經長大在大學就讀的兒子達頓，決定回到陰深處面對他們家族黑暗的過去，更深入紅門後的世界與惡魔對決。",
+      "popularity": 1772.231,
+      "poster_path": "/gvPGzuHfjv93vT5IJ464cHUF75U.jpg",
+      "release_date": "2023-07-14",
+      "title": "陰兒房：鬼門陰深處",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 740
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/f7UI3dYpr7ZUHGo0iIr1Qvy1VPe.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        14,
+        35
+      ],
+      "id": 1040148,
+      "original_language": "en",
+      "original_title": "Ruby Gillman, Teenage Kraken",
+      "overview": "故事發生在少女之間明爭暗鬥、波濤洶湧的高中校園，主人翁是一個靦腆害羞的少女，有一天她發現自己竟然擁有傳奇神話中的海怪皇室血統，而且她在海底深處的宿命，遠遠比她想像的更宏偉。",
+      "popularity": 881.566,
+      "poster_path": "/xhJgVF019OuVBb9TipvQbTmfw38.jpg",
+      "release_date": "2023-06-30",
+      "title": "變身少女露比",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 488
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 872585,
+      "original_language": "en",
+      "original_title": "Oppenheimer",
+      "overview": "克里斯多夫諾蘭自編自導的《奧本海默》是一部用IMAX攝影機拍攝的史詩驚悚片，觀眾將看到一個謎一般的男人是如何陷入一個自相矛盾的困境，他為了拯救這個世界，必須先毀滅它。",
+      "popularity": 708.996,
+      "poster_path": "/aGfEOxRPwp5lEeYfUU0cBpQ0k9K.jpg",
+      "release_date": "2023-07-21",
+      "title": "奧本海默",
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 1772
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cSYLX73WskxCgvpN3MtRkYUSj1T.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        14,
+        10749
+      ],
+      "id": 976573,
+      "original_language": "en",
+      "original_title": "Elemental",
+      "overview": "《元素方城市》設於一座聚集空氣、水、火、土四大基本元素「民眾」共存居住的城市，敘述一名脾氣火熱的「火女」與一位隨遇而安的「水男」雖已身為元素，卻反而仍得探索內心更加基本的「元素」：原本水火不容的他們的彼此共通之處。這部再度發揮皮克斯動畫工作室異想天開創意的作品，仍具備表現人類情感與連結的靈魂核心，也充滿不可或缺的爆笑與感人情節，即將再度擄獲影迷觀眾的心！",
+      "popularity": 632.033,
+      "poster_path": "/xkcV2lq00uomOHfNQYDKO6lBUIC.jpg",
+      "release_date": "2023-07-06",
+      "title": "元素方城市",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 762
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rRcNmiH55Tz0ugUsDUGmj8Bsa4V.jpg",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "id": 884605,
+      "original_language": "en",
+      "original_title": "No Hard Feelings",
+      "overview": "由珍妮佛勞倫斯飾演的麥蒂，為了保住她從小長大的房子，找到一則耐人尋味的徵人啟事。一對有錢的恐龍家長，希望能在內向的兒子波西上大學前，找到人來與他「約會」。出乎意料之外，麥蒂發現令人尷尬的波西，其實不是那麼簡單就能「搞定」的。",
+      "popularity": 554.043,
+      "poster_path": "/wsg9ZoHzhTBfVwzGA5ooFmL0pUr.jpg",
+      "release_date": "2023-07-28",
+      "title": "珍愛硬起來",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 319
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/628Dep6AxEtDxjZoGP78TsOxYbK.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
+      "id": 575264,
+      "original_language": "en",
+      "original_title": "Mission: Impossible - Dead Reckoning Part One",
+      "overview": "《不可能的任務》系列最新作品  派拉蒙影業於2023年暑假推出《不可能的任務》電影系列最新作品《不可能的任務：致命清算 第一章》，導演仍是由曾經執導2015年《不可能的任務：失控國度》和2018年《不可能的任務：全面瓦解》的克里斯多夫麥奎瑞擔任，主要原班演員包括湯姆克魯斯、文雷姆斯、賽門佩吉、蕾貝卡弗格森、凡妮莎柯比，以及新加入演員海莉艾特沃、希亞溫漢、龐克萊門捷夫、伊塞莫瑞、亨利科澤尼、羅伯德萊尼、凱瑞艾文斯、印第拉巴瑪、馬克加蒂斯、查爾斯帕內爾、格雷格塔扎戴維斯、佛德瑞克施密特…等。",
+      "popularity": 450.122,
+      "poster_path": "/p8hLMjfuFgu3sEyc5HNUHnizIYj.jpg",
+      "release_date": "2023-07-08",
+      "title": "不可能的任務：致命清算 第一章",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 965
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/pJWwhD17igvXDsre3f1USAAcDvz.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1008042,
+      "original_language": "en",
+      "original_title": "Talk to Me",
+      "overview": "農曆七月「鬼門開」即將到來，今年夏天最可怕的恐怖片《鬼手鬼手請開門》有別以往碟仙、錢仙傳統降靈法則，創新招魂模式，令人不寒而慄，包準大家嚇得一身冷汗、背脊發涼解暑一下。故事講述一群學生開趴，為了尋找快感，拿來號稱是靈媒屍體殘肢的手臂，握住它並講出咒語：「跟我說話」隨即能見鬼，進一步講出：「我讓你進來」就能體驗鬼附身的感覺，遊戲規則是要在90秒內放開手驅走亡靈，否則後果不堪設想。這群不怕死的年輕人為了尋找新鮮樂子，招來各種不同鬼，招靈玩上癮，膽子越來越大，竟打破90秒禁忌，意外吸引一批在暗處伺機而動的凶狠陰魂，歡樂的趴踢變成通往地獄的門，惡靈無處不在準備奪魄勾魂，誰的話能夠相信，這場「死無前例」的玩命派對遊戲該如何終止？",
+      "popularity": 428.082,
+      "poster_path": "/oJJziIZdIeDmHQEiKmEMUY3x0fK.jpg",
+      "release_date": "2023-08-11",
+      "title": "鬼手鬼手 請開口",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 121
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/Als2QyqbLgT5G3rwTGJta8QQfqP.jpg",
+      "genre_ids": [
+        35,
+        14
+      ],
+      "id": 616747,
+      "original_language": "en",
+      "original_title": "Haunted Mansion",
+      "overview": "由迪士尼樂園同名遊樂設施改編，一位醫生（羅莎瑞 道森 飾）和他的九歲兒子（蔡斯· W· 狄龍 飾）搬進紐奧良一棟價格出奇便宜的豪宅，卻很快地發現這棟房子「驚喜連連」。面臨危機迫切需要協助的他們，集結了一位牧師（歐文 威爾森 飾）、一位喪偶的失意超自然專家（拉基斯 史坦費爾德 飾）、一位法國通靈者（蒂芬妮 哈戴許 飾）和一位性格古怪的歷史學家（丹尼 德維托 飾）組成驅魔大隊，來對抗豪宅內的惡靈。究竟與幽靈公館內的鬼魂戰爭，誰會勝出？",
+      "popularity": 133.787,
+      "poster_path": "/nSLTpt2jskGssbHt56Z4EIuItp5.jpg",
+      "release_date": "2023-08-10",
+      "title": "幽靈公館",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 119
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/x0GGS0r4ig4fMMehTRVPyXkxKTI.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 565770,
+      "original_language": "en",
+      "original_title": "Blue Beetle",
+      "overview": "敘述海梅雷耶斯剛從大學畢業回到家鄉，對未來滿懷抱負，但卻發現他的家已經跟以前不一樣了。他開始尋找自己在這個世界上的目標，此時命運來敲門，海梅意外尋獲一個外星生物科技的古遺物—聖甲蟲。這隻聖甲蟲忽然選擇海梅成為其共生宿主，使海梅獲得一套神奇的盔甲，並被賦予出乎意料的超能力。這永遠改變海梅的命運，從此變成超級英雄藍甲蟲。",
+      "popularity": 135.427,
+      "poster_path": "/vg1neJPGKuPdXO1vbveZ5k2Lrn7.jpg",
+      "release_date": "2023-08-17",
+      "title": "藍甲蟲",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g8kCHQzfogy1t1dE9nPBtiFkz64.jpg",
+      "genre_ids": [
+        53,
+        878,
+        18
+      ],
+      "id": 729854,
+      "original_language": "ko",
+      "original_title": "콘크리트 유토피아",
+      "overview": "因為大地震而一夜化為廢墟的首爾，一切都崩塌了，就只有一處「皇宮公寓」仍屹立不搖，聽到傳聞的外部倖存者們紛紛湧入皇宮公寓。為了生存而成為一體的他們，以新住民代表英卓（李炳憲 飾）為中心，徹底阻止外部人士的進出，為了公寓住戶訂定了新的規則。幸虧如此，和外面如地獄般的世界不同，對住戶們而言沒有比皇宮公寓更安全平和的烏托邦了。然而在無盡的生存危機中，他們之間也開始出現了出乎意料的糾葛……倖存者們的生存規則——究竟該遵守還是離開呢？",
+      "popularity": 42.433,
+      "poster_path": "/5CIUxR6nMaPdCs6ZJ35YXVbmbhv.jpg",
+      "release_date": "2023-08-10",
+      "title": "水泥烏托邦：末日浩劫",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nYDPmxvl0if5vHBBp7pDYGkTFc7.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 709631,
+      "original_language": "en",
+      "original_title": "Cobweb",
+      "overview": "男孩彼得（伍迪諾曼 飾）為臥室牆壁裡不斷發出的神祕敲打聲感到困擾，但他的爸爸馬克（安東尼史塔 飾）和媽媽卡蘿（麗茲凱普蘭 飾）都堅稱那只是他的想像，父母的反應讓彼得開始懷疑他們是否有什麼不可告人的祕密……。",
+      "popularity": 45.801,
+      "poster_path": "/nkAF68Rq5xrsaP9QiThDZ0Mg3sH.jpg",
+      "release_date": "2023-07-19",
+      "title": "鬼打牆",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 30
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9fUu0jwR1V5OJ9M1G4XCDsD4sQz.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 666277,
+      "original_language": "en",
+      "original_title": "Past Lives",
+      "overview": "諾拉（葛麗塔李 飾）與海聖（劉台午 飾）是對從小在首爾一起長大的青梅竹馬，然而，兩人的緣分卻在諾拉一家人突然移民加拿大後戛然而止。然而，20年後，命運卻讓早已分道揚鑣的諾拉與海聖在紐約街頭再度相遇，在久別重逢的這一週裡，兩人將面對命運、愛情和人生的抉擇……。",
+      "popularity": 26.776,
+      "poster_path": "/dTNzxbU1t3quJuvCw8E2dSS86TP.jpg",
+      "release_date": "2023-07-28",
+      "title": "之前的我們",
+      "video": false,
+      "vote_average": 7.9,
+      "vote_count": 29
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vFrvZjU6DnJzzIbeeKylilTfyui.jpg",
+      "genre_ids": [
+        18,
+        14,
+        10749,
+        53
+      ],
+      "id": 820697,
+      "original_language": "fr",
+      "original_title": "Les Cinq diables",
+      "overview": "打破時空維度的神秘氣味，在記憶裡飄散穿梭，看不見也摸不著，卻能召喚深埋已久的過往。冷冽大湖座落的偏山小鎮，特異而孤獨的女孩薇琪擁有神奇的嗅覺超能力，她能複製出各種氣味並小心蒐藏在標記的罐子裡，甚至是媽媽瓊安的味道。某天，疏遠陌生的姑姑茱莉亞不請自來登門造訪，薇琪更意外被她的氣味所牽引，而陷入一段段黑暗弔詭的記憶中。這座小鎮、這個家裡、每段關係，塵封多年的秘密也將被揭開⋯⋯。",
+      "popularity": 25.48,
+      "poster_path": "/61ualx0qzDtIbDWQWSapIxxbVVF.jpg",
+      "release_date": "2023-08-05",
+      "title": "五個惡魔",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 115
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3Sdi32wfIIOtDz1hYik6bGe1iWC.jpg",
+      "genre_ids": [
+        12,
+        35,
+        18
+      ],
+      "id": 634120,
+      "original_language": "kn",
+      "original_title": "777 ಚಾರ್ಲಿ",
+      "overview": "在養殖場的拉布拉多衝破玻璃，翻山越嶺日曬雨淋，奔逃迎向未知之境；單身工人達馬生活索然無趣，社交冷漠疏離，和同事沒一句話投機，鄰居避之唯恐而不及。一場意外讓一狗一人開始糾纏不清，達馬本來只是起了惻隱之心，卻被迫成為中途家庭，送養不成還遭動保協會關心，在日久混亂中漸漸培養出深厚感情，這才發現牠的狀況有些不對勁⋯⋯。",
+      "popularity": 33.849,
+      "poster_path": "/m6GdmXMpHXsXhB60cqw5YtbIY9K.jpg",
+      "release_date": "2023-07-21",
+      "title": "幸運狗狗來造訪",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lJXHuyY622HcA0RHJvkeJcvzamK.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 788734,
+      "original_language": "no",
+      "original_title": "Syk pike",
+      "overview": "想爆紅無下限，毀三觀也要求關注！席格娜與男友湯瑪士同樣自戀，都想成為人群裡唯一的焦點。湯瑪士利用偷來的贓物搖身一變成為當紅藝術家，滿心嫉妒的席格娜討拍刷存在，卻仍是個無人搭理的咖啡店店員。走投無路的她索性猛吞俄羅斯禁藥，讓臉上爬滿浮腫的紅色傷疤，駭人的病態也為她博得同情與目光。就在淺嚐受矚目的滋味後，席格娜變本加厲想透過「賣慘」來一舉成名。於是，她任由謊言與傷痕爆裂滋長，直至一切崩壞到無法挽救的地步⋯⋯。",
+      "popularity": 18.046,
+      "poster_path": "/7RJC7SogoV2hEqux9bhexTJ3vpN.jpg",
+      "release_date": "2023-07-07",
+      "title": "我恨我自己",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 67
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hag9edxgL2RgG9FMfqAV0KgjPK0.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 803700,
+      "original_language": "it",
+      "original_title": "Le otto montagne",
+      "overview": "11歲的皮耶托（路卡馬林內利Luca Marinelli 飾）隨父母搬到阿爾卑斯山麓的格拉納，並在這裡認識了布魯諾（亞歷山卓柏爾吉Alessandro Borghi 飾）。布魯諾是被遺忘在山村的最後一個孩子，由於父母常年在外，一直由叔叔撫養。皮耶托和布魯諾很快結為摯友，親密的情誼也引領兩人走入了一個未知的疆界。但布魯諾很快就被他的藍領父親帶離了格拉納，兩人從此也失去了聯絡…。  5年後，皮耶托重返格拉納，和布魯諾在酒吧巧遇，兩人卻尷尬地沒有說話。皮耶托因與父親關係不睦，從此也與山漸行漸遠。15年後，皮耶托因為父親去世而重返家鄉，並與布魯諾再度相遇，兩個男孩也都成了男人。布魯諾帶他登上山峰，兩人並以皮耶托父親遺留的石材木料，同心建造一棟房子。布魯諾繼續山居放牧，皮耶托則致力寫作，兩人快樂生活，重續這份相隔20年的情誼…。  隔年，皮耶托的前女友拉拉前來探訪，意外和布魯諾陷入熱戀，並生下一女安妮塔。此時，皮耶托對自己毫無成就的人生感到不滿，決定遠走尼泊爾重塑自己。志在四方的皮耶托，和心繫山峰的布魯諾，人生的每次相逢總會為彼此帶來愛與失去，面對過往的回憶與經歷，兩人找到了生命與友誼的真諦…。",
+      "popularity": 20.012,
+      "poster_path": "/hP1aUR5B1pKJB86Vj3fk8Dz8KHw.jpg",
+      "release_date": "2023-07-28",
+      "title": "回不去的那座山",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 449
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vZaIAIX5XcXLsF4jRSp5x7wsRzn.jpg",
+      "genre_ids": [
+        80,
+        28
+      ],
+      "id": 783110,
+      "original_language": "ko",
+      "original_title": "밀수",
+      "overview": "化學工廠開始進到平和的海岸村後，讓海女們失去了工作。為了謀生而尋找各種方法的春子（金憓秀 飾），在發現了只要打撈丟進海底的走私品，就能獲得鉅額報酬的走私世界後，便向海女領袖真淑（廉晶雅 飾）提出誘人的計畫。即使知道是危險的工作，但海女真淑為了生計仍果斷做出決定，並在她遇見「全國走私王」權上士（趙寅成 飾）後，正式身陷格局更大的走私計畫。然而某日，一生只有一次的致富機會到來，他們開始欺騙彼此，捲入深不可測的走私世界……唯有知道水路的人才有「錢」途！",
+      "popularity": 19.183,
+      "poster_path": "/wsHndjxlcY8KLrgZqBXLI8GKkPT.jpg",
+      "release_date": "2023-07-28",
+      "title": "神鬼海底撈",
+      "video": false,
+      "vote_average": 8,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2a9DvjXQQezV0sWqJbIN2mDLgZZ.jpg",
+      "genre_ids": [
+        28,
+        18,
+        80
+      ],
+      "id": 1093485,
+      "original_language": "cn",
+      "original_title": "掃毒3︰人在天涯",
+      "overview": "《掃毒3：人在天涯》故事描述毒梟康素差（劉青雲 飾）一直帶著手下張建行（郭富城 飾）從事毒品交易，新加入的成員歐志遠（古天樂 飾）也因一次意外與兩人有了過命交情，三人情同手足。康素差在香港的販毒生意被警方查處後，帶著團隊逃到金三角發展，卻意外發現身邊藏有臥底。 此刻，誰是敵？誰是友，一片茫然......",
+      "popularity": 26.121,
+      "poster_path": "/ndI1knYEuEpdOp1t0HbNRApffvr.jpg",
+      "release_date": "2023-08-11",
+      "title": "掃毒3：人在天涯",
+      "video": false,
+      "vote_average": 5,
+      "vote_count": 2
+    }
+  ],
+  "total_pages": 3,
+  "total_results": 43
+}
