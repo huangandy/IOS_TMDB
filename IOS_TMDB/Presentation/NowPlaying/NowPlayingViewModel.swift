@@ -12,8 +12,7 @@ class NowPlayingViewModel: ObservableObject {
 
     private let movieService: MovieService = MovieStore.shared
     var page = 1
-    var isFetching = false
-    @Published var isEnd = false
+    @Published var fetchStatus: FetchStatus = .START
     @Published var results = [Movie]()
     @Published private(set) var phase: DataFetchPhase<[Movie]> = .empty
     
@@ -24,8 +23,8 @@ class NowPlayingViewModel: ObservableObject {
     var titleFontSize: CGFloat { LayoutType.layoutTypes.filter({ $0.tag == layout}).first?.titleFontSize ?? 30}
     var overviewFontSize: CGFloat { LayoutType.layoutTypes.filter({ $0.tag == layout}).first?.overviewFontSize ?? 20}
     var dateFontSize: CGFloat { LayoutType.layoutTypes.filter({ $0.tag == layout}).first?.dateFontSize ?? 15}
-    
     var ratio: CGFloat { return LayoutType.layoutTypes.filter({ $0.tag == layout}).first?.ratio ?? 1 }
+    
     private var sortKey: SortingType.SortKey {
         return SortingType.sortingTypes.filter({ $0.tag == sorting }).first?.sortKey ?? .Default
     }
@@ -39,13 +38,15 @@ class NowPlayingViewModel: ObservableObject {
     
     
     func fetchResults() async{
-        if !isFetching {
-            isFetching.toggle()
+        if fetchStatus == .START || fetchStatus == .CANFETCH {
             do {
+                if fetchStatus == .START {
+                    try await Task.sleep(nanoseconds: 2_000_000_000) // Fake delay for demo skeleton
+                }
+                DispatchQueue.main.async { self.fetchStatus = .FETCHING }
                 let list = try await movieService.fetchMovies(from: MovieListEndpoint.nowPlaying, page: self.page)
-                isFetching.toggle()
                 DispatchQueue.main.async {
-                    self.isEnd = list.page >= list.totalPages
+                    self.fetchStatus = list.page >= list.totalPages ? .END : .CANFETCH
                     self.results.append(contentsOf: list.results)
                     self.page += 1
                     self.sortMovies(sortKey: self.sortKey)
@@ -53,8 +54,8 @@ class NowPlayingViewModel: ObservableObject {
                 }
                 
             } catch {
-                isFetching.toggle()
                 DispatchQueue.main.async {
+                    self.fetchStatus = .CANFETCH
                     self.phase = .failure(self.results, error)
                 }
             }
@@ -91,10 +92,10 @@ class NowPlayingViewModel: ObservableObject {
     }
     
     func refreshMovies() {
+        self.fetchStatus = .START
         self.phase = .empty
         self.results = []
         self.page = 1
-        self.isFetching = false
         Task {
             await self.fetchResults()
         }
@@ -105,4 +106,11 @@ class NowPlayingViewModel: ObservableObject {
             await fetchResults()
         }
     }
+}
+
+enum FetchStatus: Equatable {
+    case START
+    case CANFETCH
+    case FETCHING
+    case END
 }

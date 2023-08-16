@@ -60,7 +60,6 @@ struct MovieThumbnailView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
-
             }
         }
         .cornerRadius(8)
@@ -68,7 +67,7 @@ struct MovieThumbnailView: View {
     }
 }
 
-struct MoviePosterCard_Previews: PreviewProvider {
+struct MovieThumbnailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MovieThumbnailView(movie: Movie.stubbedMovie, titleFontSize: 30, overviewFontSize: 20, dateFontSize: 15)

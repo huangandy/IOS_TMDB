@@ -11,54 +11,51 @@ struct NowPlayingView: View {
     
     @StateObject private var viewModel: NowPlayingViewModel
     @State private var showMovieSearch = false
-
-        
+    
     init() {
         self._viewModel = StateObject<NowPlayingViewModel>(wrappedValue: .init())
     }
         
     var body: some View {
-        GeometryReader { reader in
-            ScrollView(.vertical, showsIndicators: false) {
-                Section(footer: footer()) {
-                    LazyVGrid(columns: viewModel.colums, spacing: 10) {
-                        ForEach(viewModel.results) { movie in
+        ScrollView(.vertical, showsIndicators: false) {
+            Section(footer: Footer()) {
+                LazyVGrid(columns: viewModel.colums, spacing: 10) {
+                    ForEach(viewModel.results) { movie in
+                        NavigationLink(destination: MovieDetailView(movieId: movie.id, movieTitle: movie.title)) {
                             
-                            NavigationLink(destination: MovieDetailView(movieId: movie.id, movieTitle: movie.title)) {
-                                
-                                MovieThumbnailView(
-                                    movie: movie,
-                                    titleFontSize: viewModel.titleFontSize,
-                                    overviewFontSize: viewModel.overviewFontSize,
-                                    dateFontSize: viewModel.dateFontSize
-                                ).aspectRatio(viewModel.ratio, contentMode: .fill)
-                                
-                            }
-                            .buttonStyle(.plain)
-                            .onAppear {
-                                if !viewModel.isEnd {
-                                    DispatchQueue.global(qos: .userInitiated).async {
-                                        Task {
-                                            await viewModel.next(result: movie)
-                                        }
+                            MovieThumbnailView(
+                                movie: movie,
+                                titleFontSize: viewModel.titleFontSize,
+                                overviewFontSize: viewModel.overviewFontSize,
+                                dateFontSize: viewModel.dateFontSize
+                            ).aspectRatio(viewModel.ratio, contentMode: .fill)
+                            .accessibilityIdentifier("item_\(movie.id)")
+                            
+                        }
+                        .buttonStyle(.plain)
+                        .onAppear {
+                            if viewModel.fetchStatus != .END{
+                                DispatchQueue.global(qos: .userInitiated).async {
+                                    Task {
+                                        await viewModel.next(result: movie)
                                     }
                                 }
                             }
                         }
                     }
                 }
-                .padding(.horizontal, 5)
-                .padding(.vertical, 10)
+                .accessibilityIdentifier("now_playing_grid")
             }
+            .padding(.horizontal, 5)
+            .padding(.vertical, 10)
+        }
+        .refreshable {
+            viewModel.refreshMovies()
         }
         .overlay(overlayView)
         .navigationTitle("Now Playing")
         .toolbar {
-            Button(action: {
-                self.showMovieSearch = true
-            }) {
-                Image(systemName: "magnifyingglass")
-            }
+            searchButton
         }
         .fullScreenCover(isPresented: $showMovieSearch) {
             NavigationView {
@@ -70,8 +67,8 @@ struct NowPlayingView: View {
     }
         
     @ViewBuilder
-    func footer() -> some View {
-        if viewModel.isEnd {
+    func Footer() -> some View {
+        if case .END = viewModel.fetchStatus {
             Text("End")
         }
     }
@@ -79,9 +76,8 @@ struct NowPlayingView: View {
     @ViewBuilder
     private var overlayView: some View {
         switch viewModel.phase {
-            
         case .empty:
-            ProgressView()
+            SkeletonView()
         case .success(let values) where values.isEmpty:
             EmptyPlaceholderView(text: "No results", image: Image(systemName: "film"))
         case .failure(let values, let error) where values.isEmpty:
@@ -92,6 +88,42 @@ struct NowPlayingView: View {
         }
     }
     
+    @ViewBuilder
+    func SkeletonView() -> some View {
+        ScrollView([], showsIndicators: false) {
+            LazyVGrid(columns: viewModel.colums, spacing: 10) {
+                ForEach(1...16, id: \.self) { _ in
+                    MovieThumbnailView(
+                        movie: Movie.stubbedMovie,
+                        titleFontSize: viewModel.titleFontSize,
+                        overviewFontSize: viewModel.overviewFontSize,
+                        dateFontSize: viewModel.dateFontSize
+                    ).aspectRatio(viewModel.ratio, contentMode: .fill)
+                        .redacted(reason: .placeholder)
+                }
+            }
+            .padding(.horizontal, 5)
+            .padding(.vertical, 10)
+        }
+    }
+}
+
+extension NowPlayingView {
+    var searchButton: some View {
+        Button(action: {
+            self.showMovieSearch = true
+        }) {
+            Image(systemName: "magnifyingglass")
+        }
+        .accessibilityIdentifier("now_play_search_btn")
+    }
+}
+
+extension View {
+    @ViewBuilder
+    func redacted(if condition: @autoclosure () -> Bool) -> some View {
+        redacted(reason: condition() ? .placeholder : [])
+    }
 }
 
 struct NowPlayingView_Previews: PreviewProvider {
@@ -114,3 +146,4 @@ struct NowPlayingView_Previews: PreviewProvider {
         
     }
 }
+

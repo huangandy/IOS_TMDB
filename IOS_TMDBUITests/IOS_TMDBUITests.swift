@@ -8,34 +8,56 @@
 import XCTest
 
 final class IOS_TMDBUITests: XCTestCase {
-
+    
+    var app: XCUIApplication!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        try super.setUpWithError()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testNowPlayingIsLoaded() {
+        let grid = app.otherElements["now_playing_grid"]
+        XCTAssertTrue(grid.waitForExistence(timeout: 5), "The movie lazygrid should be visible")
+        
+        let predicate = NSPredicate(format: "identifier CONTAINS 'item_'")
+        let gridItems = grid.buttons.containing(predicate)
+        XCTAssertGreaterThan(gridItems.count, 0, "There should be some items on the screen")
     }
 
+    func testSearchPresent() throws {
+        let nowPlayingTab = app.tabBars.buttons.element(boundBy: 0)
+        nowPlayingTab.tap()
+       
+        let searchBtn = app.buttons["now_play_search_btn"]
+        XCTAssert(searchBtn.waitForExistence(timeout: 5), "Search icon not show")
+        searchBtn.tap()
+        XCTAssertTrue(app.navigationBars["Search"].waitForExistence(timeout: 5))
+        
+    }
+    
+    func testSettings() throws {
+        let settingsTab = app.tabBars.buttons.element(boundBy: 2)
+        settingsTab.tap()
+       
+    }
+
+
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+            measure(
+                metrics: [
+                  XCTClockMetric(),
+                  XCTCPUMetric(),
+                  XCTStorageMetric(),
+                  XCTMemoryMetric()
+                ]
+              ) {
+                  XCUIApplication().launch()
+              }
         }
     }
 }

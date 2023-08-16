@@ -12,9 +12,9 @@ final class sortingTests: XCTestCase {
     
     var nowPlayingViewModel: NowPlayingViewModel!
     let testData = [
-        Movie(id: -1, title: "a", backdropPath: nil, overview: "", voteAverage: 1.0, voteCount: 1, runtime: nil, releaseDate: "2023-08-11", genres: nil, credits: nil, videos: nil),
-        Movie(id: -1, title: "b", backdropPath: nil, overview: "", voteAverage: 2.0, voteCount: 1, runtime: nil, releaseDate: "2023-07-12", genres: nil, credits: nil, videos: nil),
-        Movie(id: -1, title: "c", backdropPath: nil, overview: "", voteAverage: 3.0, voteCount: 1, runtime: nil, releaseDate: "2023-06-30", genres: nil, credits: nil, videos: nil),
+        Movie(id: -1, title: "a", backdropPath: nil, overview: "", voteAverage: 1.0, voteCount: 1, runtime: nil, releaseDate: "2023-08-11", genres: nil, credits: nil),
+        Movie(id: -1, title: "b", backdropPath: nil, overview: "", voteAverage: 2.0, voteCount: 1, runtime: nil, releaseDate: "2023-07-12", genres: nil, credits: nil),
+        Movie(id: -1, title: "c", backdropPath: nil, overview: "", voteAverage: 3.0, voteCount: 1, runtime: nil, releaseDate: "2023-06-30", genres: nil, credits: nil),
     ]
     
     override func setUpWithError() throws {

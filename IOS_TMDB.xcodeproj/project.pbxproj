@@ -299,6 +299,7 @@
 		FC4228E62A875454005EA66C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FC4228D32A873E6E005EA66C /* MovieThumbnailView.swift */,
 				FC4324B92A87D0C0002FFC27 /* OverlayViews */,
 				FC4228CE2A872E7D005EA66C /* ImageLoader.swift */,
 				FC4228DB2A874452005EA66C /* UIKitViews */,
@@ -354,7 +355,6 @@
 		FCA7311B2A88A6CC00970FFF /* NowPlaying */ = {
 			isa = PBXGroup;
 			children = (
-				FC4228D32A873E6E005EA66C /* MovieThumbnailView.swift */,
 				FCA7311C2A88A6DE00970FFF /* NowPlayingView.swift */,
 				FCA7311E2A88B32900970FFF /* NowPlayingViewModel.swift */,
 			);

@@ -35,7 +35,6 @@ struct Movie: Decodable, Identifiable, Hashable {
     
     let genres: [MovieGenre]?
     let credits: MovieCredit?
-    let videos: MovieVideoResponse?
     
     static private let yearFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -107,10 +106,6 @@ struct Movie: Decodable, Identifiable, Hashable {
         crew?.filter { $0.job.lowercased() == "story" }
     }
     
-    var youtubeTrailers: [MovieVideo]? {
-        videos?.results.filter { $0.youtubeURL != nil }
-    }
-    
 }
 
 struct MovieGenre: Decodable {
@@ -136,22 +131,4 @@ struct MovieCrew: Decodable, Identifiable {
     let name: String
 }
 
-struct MovieVideoResponse: Decodable {
-    
-    let results: [MovieVideo]
-}
 
-struct MovieVideo: Decodable, Identifiable {
-    
-    let id: String
-    let key: String
-    let name: String
-    let site: String
-    
-    var youtubeURL: URL? {
-        guard site == "YouTube" else {
-            return nil
-        }
-        return URL(string: "https://youtube.com/watch?v=\(key)")
-    }
-}

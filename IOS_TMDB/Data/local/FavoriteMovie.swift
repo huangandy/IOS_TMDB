@@ -30,6 +30,6 @@ struct FavoriteMovieList {
 
 extension FavoriteMovie {
     func toMovie() -> Movie {
-        return Movie(id: self.movieId, title: self.title, backdropPath: self.backdropPath, overview: self.overview, voteAverage: 0, voteCount: 0, runtime: nil, releaseDate: self.releaseDate, genres: nil, credits: nil, videos: nil)
+        return Movie(id: self.movieId, title: self.title, backdropPath: self.backdropPath, overview: self.overview, voteAverage: 0, voteCount: 0, runtime: nil, releaseDate: self.releaseDate, genres: nil, credits: nil)
     }
 }
