@@ -21,10 +21,9 @@ class MovieDetailViewModel: ObservableObject {
     }
     
     func loadMovie(id: Int) async {
-        if Task.isCancelled { return }
         phase = .empty
-     
         do {
+            try await Task.sleep(nanoseconds: 1_500_000_000) // Fake delay for demo skeleton
             let movie = try await self.movieService.fetchMovie(id: id)
             refreshFavorite(movie: movie)
             phase = .success(movie)

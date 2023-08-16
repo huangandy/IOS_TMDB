@@ -14,12 +14,13 @@ protocol EmptyData {
 struct DataFetchPhaseOverlayView<V: EmptyData>: View {
     
     let phase: DataFetchPhase<V>
+    let skeleton: AnyView
     let retryAction: () -> ()
     
     var body: some View {
         switch phase {
         case .empty:
-            ProgressView()
+            skeleton
         case .success(let value) where value.isEmpty:
             EmptyPlaceholderView(text: "No Data", image: Image(systemName: "tv"))
         case .failure(_, let error):
@@ -46,15 +47,15 @@ extension Optional: EmptyData {
 struct DataFetchPhaseOverlayView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            DataFetchPhaseOverlayView(phase: .success([])) {
+            DataFetchPhaseOverlayView(phase: .success([]), skeleton: AnyView(ProgressView())) {
                 print("Retry")
             }
             
-            DataFetchPhaseOverlayView<Movie?>(phase: .failure(nil, MovieError.invalidResponse)) {
+            DataFetchPhaseOverlayView<Movie?>(phase: .failure(nil, MovieError.invalidResponse), skeleton: AnyView(ProgressView())) {
                 print("Retry")
             }
             
-            DataFetchPhaseOverlayView<[Movie]>(phase: .empty) {
+            DataFetchPhaseOverlayView<[Movie]>(phase: .empty, skeleton: AnyView(ProgressView())) {
                 print("Retry")
             }
         }

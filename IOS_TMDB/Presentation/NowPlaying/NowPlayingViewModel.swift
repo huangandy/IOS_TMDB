@@ -41,7 +41,7 @@ class NowPlayingViewModel: ObservableObject {
         if fetchStatus == .START || fetchStatus == .CANFETCH {
             do {
                 if fetchStatus == .START {
-                    try await Task.sleep(nanoseconds: 2_000_000_000) // Fake delay for demo skeleton
+                    try await Task.sleep(nanoseconds: 1_500_000_000) // Fake delay for demo skeleton
                 }
                 DispatchQueue.main.async { self.fetchStatus = .FETCHING }
                 let list = try await movieService.fetchMovies(from: MovieListEndpoint.nowPlaying, page: self.page)

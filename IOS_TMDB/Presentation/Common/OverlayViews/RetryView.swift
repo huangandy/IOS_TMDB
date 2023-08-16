@@ -14,12 +14,17 @@ struct RetryView: View {
     
     var body: some View {
         VStack(spacing: 8) {
+            Image(systemName: "exclamationmark.triangle.fill")
+                .resizable()
+                .foregroundColor(Color.red)
+                .frame(width: 100, height: 100)
             Text(text)
-                .font(.callout)
+                .font(.title2)
                 .multilineTextAlignment(.center)
             
             Button(action: retryAction) {
-                Text("Try Again")
+                Text("Retry")
+                .font(.title)
             }
         }
     }

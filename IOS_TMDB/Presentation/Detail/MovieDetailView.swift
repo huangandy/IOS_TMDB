@@ -25,7 +25,7 @@ struct MovieDetailView: View {
         }
         .listStyle(.plain)
         .overlay(DataFetchPhaseOverlayView(
-            phase: viewModel.phase,
+            phase: viewModel.phase, skeleton: AnyView(SkeletonView()),
             retryAction: loadMovie)
         ).onAppear {
             loadMovie()
@@ -38,6 +38,17 @@ struct MovieDetailView: View {
                 Image(systemName: viewModel.isFavorite ? "heart.fill" : "heart").foregroundColor(.red)
             }
         }
+    }
+    
+    @ViewBuilder
+    func SkeletonView() -> some View {
+        List {
+            MovieDetailImage(imageURL: URL(string: "https://")!)
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listRowSeparator(.hidden)
+            
+            MovieDetailListView(movie: Movie.stubbedMovie)
+        }.redacted(reason: .placeholder)
     }
     
     private func loadMovie() {
